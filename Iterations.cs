@@ -25,9 +25,15 @@ namespace DotnetIteration
         //    the words forced to uppercase.
         //
         public static IEnumerable<string> Yelling(List<string> words)
+
+
         {
-            throw new System.NotImplementedException();
+            var newList = words.Select(word => word.ToUpper());
+            return newList;
         }
+
+
+
 
 
         // 
@@ -37,7 +43,9 @@ namespace DotnetIteration
         // 
         public static IEnumerable<int> Double(List<int> numbers)
         {
-            throw new System.NotImplementedException();
+            var data = new List<int> { 1, 2, 3, 4, 5 };
+            var doubleData = data.Select(data => data * 2);
+            return doubleData;
         }
 
 
@@ -49,7 +57,8 @@ namespace DotnetIteration
         // 
         public static IEnumerable<string> StringyIndexes(List<string> data)
         {
-            throw new System.NotImplementedException();
+            var newIndexList = data.Select((word) => ("is at index {data.IndexOf}(", "));
+
         }
 
 

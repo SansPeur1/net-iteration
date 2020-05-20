@@ -16,7 +16,7 @@ namespace DotnetIteration
       Assert.Equal(expected, Iteration.Yelling(data));
     }
 
-    [Fact(Skip = "Remove to run test")]
+    [Fact]
     public void Double()
     {
       var expected = new List<int> { 2, 4, 6, 8, 10 };
